@@ -16,9 +16,9 @@
     <splash height="300" src="res/screens/windows/SplashScreen.scale-100.png" width="620" />
     <splash height="1920" src="res/screens/windows/SplashScreen.scale-240.png" width="1152" />
     <splash height="1920" src="res/screens/windows/SplashScreenPhone.scale-240.png" width="1152" />
-    <name>MorseLearnAndTranslatePhonegap</name>
-    <description>A blank project that uses Apache Cordova to help you build an app that targets multiple mobile platforms: Android, iOS, Windows, and Windows Phone.</description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">Apache Cordova Team </author>
+    <name>Morse Learn And Translate</name>
+    <description>This application allows you to learn morse alphabet and translate morse code into words!</description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">Egor Smutkin</author>
     <content src="index.html" />
     <access origin="*" />
     <vs:features />

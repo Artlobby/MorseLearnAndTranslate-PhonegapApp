@@ -20,9 +20,6 @@ body {
 }
 .upper_table{
     background: #28343b;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #414448), color-stop(20%, #535D62), color-stop(100%, #1D2022));
-    -webkit-tap-highlight-color:rgba(0,0,0,0); 
-
 }
 #Convert_txt{
     display:table-cell;
@@ -57,7 +54,6 @@ text-align: center;
     background-repeat: no-repeat;
 }
 .input_text{
-
     box-shadow: 3px 3px 10px 5px #28343b;
     border-radius: 5px;
     height: 150px;    
@@ -81,15 +77,13 @@ input[type=button] {
     color:white;
     font-size: 19px;
     background: url(../img/opt2.png);
-        background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 37px;    
     line-height: 37px; 
     margin-right: 10px;
     box-shadow: 0 0 6px 4px #28343b;
-
     border-radius: 5px;
-    
     border: 1px solid #aaa;
     width: 45%;
 }
@@ -103,27 +97,24 @@ input[type=button].litlbtn{
     line-height: 33px; 
     margin-right: 10px;
     box-shadow: 0 0 6px 4px #28343b;
-
     border-radius: 5px;
-    
     border: 1px solid #aaa;
     width: 40%;
 }
 .td_letter{
     text-align: center;
     width:20%;
-    height: 60px;
+    height: 50px;
     background: url(../img/opt.png);
     background-size: cover;
     background-repeat: no-repeat;
 }   
-.td_letter2{
+.change_mode_btn{
     background-color: black;
     text-align: center;
     background: url(../img/opt3.png);
     background-size: cover;
     background-repeat: no-repeat;
-
 }                                  
 .content
 {
@@ -133,8 +124,6 @@ input[type=button].litlbtn{
         
 .redBtn                       
 {
-    -webkit-border-radius:4px;
-
     text-align:center;
     color:#fff;
     font-size:14px;
@@ -143,6 +132,7 @@ input[type=button].litlbtn{
     background: linear-gradient(to bottom left,  #F2594B, #BF0426);     
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #F2594B), color-stop(2%, #F2594B), color-stop(100%, #BF0426));
     -webkit-tap-highlight-color:rgba(0,0,0,0); 
+    -webkit-border-radius:4px;
     border: 1px solid #aa0000;
     border-top-color: #bf0000;  
     -webkit-box-shadow: 1px 1px 6px #666666;  

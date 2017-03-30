@@ -7,5 +7,5 @@
 'Swap sides',
 'Encoded message:',
 'Alphabet',
-'Hint: you can use there symbols to enter a code: <br> "—" for a long beep <br> "•" for a short beep <br> "|" for a long pause <br><br>'
+'Hint: you can use these symbols to enter a code: <br> "—" or "-" for a long beep <br> "•" or "." for a short beep <br> "/" for a long pause <br><br>'
 );

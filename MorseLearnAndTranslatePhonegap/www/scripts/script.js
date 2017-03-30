@@ -1,196 +1,10 @@
-
-$(document).on('touchstart', '#123', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchend click', '#123', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        $(this).css({ 'backgroundImage': 'url("img/opt.png")' });
-        document.getElementById('main_tab').style.display = 'none'
-        $('.td_letter').css({ 'height': '100px' });
-        document.getElementById('num_tab').style.display = 'inline-table'
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchstart', '#abc', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
-        document.getElementById('num_tab').style.display = 'inline-table'
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchend click', '#abc', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        $(this).css({ 'backgroundImage': 'url("img/opt.png")' });
-        document.getElementById('num_tab').style.display = 'none'
-        document.getElementById('main_tab').style.display = 'inline-table'
-        $('.td_letter').css({ 'height': '60px' });
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchstart', '#Convert_txt_td', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchend click', '#Convert_txt_td', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        $("#Convert_txt_td").html(words[3]);
-        $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
-        document.getElementById('num_tab').style.display = 'none'
-        document.getElementById('main_tab').style.display = 'inline-table'
-        document.getElementById('convert_tab').style.display = 'none'
-        $('.td_letter').css({ 'height': '60px' });
-        $("#Convert_txt_td").attr("id", "Convert_txt_td2");
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchstart', '#Convert_txt_td2', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
-
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchend click', '#Convert_txt_td2', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-
-        $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
-        $("#Convert_txt_td2").html(words[9]);
-        document.getElementById('num_tab').style.display = 'none';
-        document.getElementById('main_tab').style.display = 'none';
-        document.getElementById('convert_tab').style.display = 'inline-table';
-        $("#Convert_txt_td2").attr("id", "Convert_txt_td");
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchstart click', '#tocod', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        tocode();
-        $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchend ', '#tocod', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchstart click', '#toen', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        toenglish();
-        $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchend', '#toen', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchstart click', '#clearid', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        clearIt();
-        $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchend ', '#clearid', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchstart click', '#swapid', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        swap();
-        $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-$(document).on('touchend', '#swapid', function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    if (event.handled !== true) {
-        $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
-        event.handled = true;
-    } else {
-        return false;
-    }
-});
-
 $(document).ready(function () {
     document.getElementById("output").innerHTML = "&nbsp;";
     document.getElementById("tocod").value = words[5];
     document.getElementById("toen").value = words[4];
     document.getElementById("clearid").value = words[6];
     document.getElementById("swapid").value = words[7];
-
+    tocode();
     //letters
     for (i = 0; i < 27; i++) {
         $(document).on('touchstart', '#' + i, function (event) {
@@ -241,8 +55,198 @@ $(document).ready(function () {
                 return false;
             }
         });
-    }
-});
+    }//end for
+
+
+
+    $(document).on('touchstart', '#123', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchend click', '#123', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            $(this).css({ 'backgroundImage': 'url("img/opt.png")' });
+            document.getElementById('main_tab').style.display = 'none'
+            $('.td_letter').css({ 'height': '100px' });
+            document.getElementById('num_tab').style.display = 'inline-table'
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchstart', '#abc', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
+            document.getElementById('num_tab').style.display = 'inline-table'
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchend click', '#abc', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            $(this).css({ 'backgroundImage': 'url("img/opt.png")' });
+            document.getElementById('num_tab').style.display = 'none'
+            document.getElementById('main_tab').style.display = 'inline-table'
+            $('.td_letter').css({ 'height': '60px' });
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchstart', '#Convert_txt_td', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchend click', '#Convert_txt_td', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            $("#Convert_txt_td").html(words[3]);
+            $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
+            document.getElementById('num_tab').style.display = 'none'
+            document.getElementById('main_tab').style.display = 'inline-table'
+            document.getElementById('convert_tab').style.display = 'none'
+            $('.td_letter').css({ 'height': '60px' });
+            $("#Convert_txt_td").attr("id", "Convert_txt_td2");
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchstart', '#Convert_txt_td2', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
+
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchend click', '#Convert_txt_td2', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+
+            $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
+            $("#Convert_txt_td2").html(words[9]);
+            document.getElementById('num_tab').style.display = 'none';
+            document.getElementById('main_tab').style.display = 'none';
+            document.getElementById('convert_tab').style.display = 'inline-table';
+            $("#Convert_txt_td2").attr("id", "Convert_txt_td");
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchstart click', '#tocod', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            tocode();
+            $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchend ', '#tocod', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchstart click', '#toen', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            toenglish();
+            $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchend', '#toen', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchstart click', '#clearid', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            clearIt();
+            $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchend ', '#clearid', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchstart click', '#swapid', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            swap();
+            $(this).css({ 'backgroundImage': 'url("img/opt3.png")' });
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+    $(document).on('touchend', '#swapid', function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        if (event.handled !== true) {
+            $(this).css({ 'backgroundImage': 'url("img/opt2.png")' });
+            event.handled = true;
+        } else {
+            return false;
+        }
+    });
+});//document.ready end
+
+
+
 
 function toenglish() {
     var input = document.frm.input.value;
@@ -305,9 +309,11 @@ function clearIt() {
     document.getElementById("output").innerHTML = "&nbsp;";
 }
 
+// popups
 var overlayElement = null;
 var modalWindowElement = null;
 var click = 'click';
+
 function createPopUpHeader(title)
 {
     modalWindowHeader = document.createElement("div");
