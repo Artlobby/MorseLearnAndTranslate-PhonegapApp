@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PC-EGOR</Machine>
+    <WindowsUser>smutk</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>debug|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>io.cordova.myapp39e90d</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Apache Cordova Team</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>3239EDFCFA328B3B83AF089ECF28CF559194E2790B65D9A1465C2D6A1CA75ED3</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>io.cordova.myapp39e90d_1.0.0.0_x64__h35559jr9hy9m</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>io.cordova.myapp39e90d_h35559jr9hy9m!io.cordova.myapp39e90d</RegisteredUserModeAppID>
+    <RegisteredPackageID>io.cordova.myapp39e90d</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Apache Cordova Team</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\build\windows\debug\x64\win8.1\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-30T06:28:44.631</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-30T06:28:43.436</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-30T06:28:43.413</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-30T06:28:43.417</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-30T06:28:43.419</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <Modified>2017-03-30T06:28:43.421</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-30T06:28:43.424</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+      <Modified>2017-03-30T06:28:43.426</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-30T06:28:43.429</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-30T06:28:43.432</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\icon_512.png">
+      <PackagePath>www\icon_512.png</PackagePath>
+      <Modified>2017-03-30T06:28:42.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\img\opt.png">
+      <PackagePath>www\img\opt.png</PackagePath>
+      <Modified>2017-03-30T06:28:42.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\img\opt2.png">
+      <PackagePath>www\img\opt2.png</PackagePath>
+      <Modified>2017-03-30T06:28:42.933</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\img\opt3.png">
+      <PackagePath>www\img\opt3.png</PackagePath>
+      <Modified>2017-03-30T06:28:42.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.605</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.606</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.081</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.607</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\scripts\abc.js">
+      <PackagePath>www\scripts\abc.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.609</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\scripts\jquery-3.2.0.min.js">
+      <PackagePath>www\scripts\jquery-3.2.0.min.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.682</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\scripts\jquery.mobile-1.3.2.min.js">
+      <PackagePath>www\scripts\jquery.mobile-1.3.2.min.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.744</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\scripts\platformOverrides.js">
+      <PackagePath>www\scripts\platformOverrides.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.340</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\scripts\script.js">
+      <PackagePath>www\scripts\script.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.761</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\scripts\winstore-jscompat.js">
+      <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\scripts\words.js">
+      <PackagePath>www\scripts\words.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.776</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+      <Modified>2017-03-30T06:28:43.337</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+      <Modified>2017-03-30T06:28:42.963</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\www\style\style.css">
+      <PackagePath>www\style\style.css</PackagePath>
+      <Modified>2017-03-30T06:28:43.782</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+      <Modified>2017-03-30T06:28:42.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\smutk\Source\Repos\MorseLearnAndTranslate\MorseLearnAndTranslatePhonegap\MorseLearnAndTranslatePhonegap\platforms\windows\build\windows\debug\x64\win8.1\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-03-30T06:28:44.506</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

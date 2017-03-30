@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head>
+<script src="scripts/jquery-3.2.0.min.js"></script>
+<script src="scripts/words.js"></script>
+<script src="scripts/abc.js"></script>
+<script src="scripts/script.js"></script>
+<link href="style/style.css" rel="Stylesheet" />
+
+<script>
+$(document).on('touchstart', '#123', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        				$(this).css({'backgroundImage': 'url("img/opt2.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+});
+$(document).on('touchend click', '#123', function(event){
+	    event.stopPropagation();
+	    event.preventDefault();
+	    if(event.handled !== true) {
+	        $(this).css({'backgroundImage': 'url("img/opt.png")'});
+	        document.getElementById('main_tab').style.display = 'none'
+	        $('.td_letter').css({'height': '100px'});
+	        document.getElementById('num_tab').style.display = 'inline-table'
+	        event.handled = true;
+	    } else {
+	        return false;
+	    }
+});
+$(document).on('touchstart', '#abc', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        				$(this).css({'backgroundImage': 'url("img/opt2.png")'});
+        				document.getElementById('num_tab').style.display = 'inline-table'
+            event.handled = true;
+        } else {
+            return false;
+        }
+});
+$(document).on('touchend click', '#abc', function(event){
+	    event.stopPropagation();
+	    event.preventDefault();
+	    if(event.handled !== true) {
+	        $(this).css({'backgroundImage': 'url("img/opt.png")'});
+	        document.getElementById('num_tab').style.display = 'none'
+	        document.getElementById('main_tab').style.display = 'inline-table'
+	        event.handled = true;
+	    } else {
+	        return false;
+	    }
+});
+$(document).on('touchstart', '#Convert_txt_td', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        				$(this).css({'backgroundImage': 'url("img/opt2.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+});
+$(document).on('touchend click', '#Convert_txt_td', function(event){
+	    event.stopPropagation();
+	    event.preventDefault();
+	    if(event.handled !== true) {
+	    	$("#Convert_txt_td").html(words[3]);
+	        $(this).css({'backgroundImage': 'url("img/opt3.png")'});
+	        document.getElementById('num_tab').style.display = 'none'
+	        document.getElementById('main_tab').style.display = 'inline-table'
+	        document.getElementById('convert_tab').style.display = 'none'
+			$("#Convert_txt_td").attr("id","Convert_txt_td2");
+	        event.handled = true;
+	    } else {
+	        return false;
+	    }
+});
+$(document).on('touchstart', '#Convert_txt_td2', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        	$(this).css({'backgroundImage': 'url("img/opt2.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+});
+$(document).on('touchend click', '#Convert_txt_td2', function(event){
+	    event.stopPropagation();
+	    event.preventDefault();
+	    if(event.handled !== true) {
+	        $(this).css({'backgroundImage': 'url("img/opt3.png")'});
+	        $("#Convert_txt_td2").html(words[9]);
+	        document.getElementById('num_tab').style.display = 'none';
+	        document.getElementById('main_tab').style.display = 'none';
+	        document.getElementById('convert_tab').style.display = 'inline-table';
+			$("#Convert_txt_td2").attr("id","Convert_txt_td");
+	        event.handled = true;
+	    } else {
+	        return false;
+	    }
+});
+	$(document).on('touchstart click', '#tocod', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        	tocode();
+        	$(this).css({'backgroundImage': 'url("img/opt3.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+	});
+	$(document).on('touchend ', '#tocod', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        	$(this).css({'backgroundImage': 'url("img/opt2.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+	});
+		$(document).on('touchstart click', '#toen', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        				toenglish();
+        				$(this).css({'backgroundImage': 'url("img/opt3.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+	});
+	$(document).on('touchend', '#toen', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        	$(this).css({'backgroundImage': 'url("img/opt2.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+	});
+	$(document).on('touchstart click', '#clearid', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        				clearIt();
+        				$(this).css({'backgroundImage': 'url("img/opt3.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+	});
+	$(document).on('touchend ', '#clearid', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        	$(this).css({'backgroundImage': 'url("img/opt2.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+	});
+	$(document).on('touchstart click', '#swapid', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        				swap();
+        				$(this).css({'backgroundImage': 'url("img/opt3.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+	});
+	$(document).on('touchend', '#swapid', function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        				$(this).css({'backgroundImage': 'url("img/opt2.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+	});
+
+$(document).ready(function(){
+document.getElementById("output").innerHTML="";
+document.getElementById("tocod").value=words[5];
+document.getElementById("toen").value=words[4];
+document.getElementById("clearid").value=words[6];
+document.getElementById("swapid").value=words[7];
+
+//letters
+for (i=0;i<27;i++){
+	$(document).on('touchstart', '#'+i, function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        				$(this).css({'backgroundImage': 'url("img/opt2.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+	});
+	$(document).on('touchstart', '#0'+i, function(event){
+        event.stopPropagation();
+        event.preventDefault();
+        if(event.handled !== true) {
+        				$(this).css({'backgroundImage': 'url("img/opt2.png")'});
+            event.handled = true;
+        } else {
+            return false;
+        }
+	});
+	$(document).on('touchend click', '#'+i, function(event){
+	    event.stopPropagation();
+	    event.preventDefault();
+	    if(event.handled !== true) {
+	    	for (i=1;i<27;i++){
+        			if ( this.id == i)
+        				showPopUpMessage(createPopUpHeader(words[0]),createPopUpContent(abc[i]),250,300);
+        	}
+	        $(this).css({'backgroundImage': 'url("img/opt.png")'});
+	        event.handled = true;
+	    } else {
+	        return false;
+	    }
+	});
+	$(document).on('touchend click', '#0'+i, function(event){
+	    event.stopPropagation();
+	    event.preventDefault();
+	    if(event.handled !== true) {
+	    	for (i=0;i<10;i++){
+        			if ( this.id =='0'+i)
+        				showPopUpMessage(createPopUpHeader(words[0]),createPopUpContent(num[i]),250,300);
+        	}
+	        $(this).css({'backgroundImage': 'url("img/opt.png")'});
+	        event.handled = true;
+	    } else {
+	        return false;
+	    }
+	});
+}
+});
+
+</script>
+</head>
+<body>
+<!--===============  (№1)-->
+
+    <table  width="100%" align="center" valign="middle" class='upper_table' width="100%">
+	    <tr>
+		    <td>
+			    <h2 id="header_text"><script>$( "#header_text" ).html(words[0]);</script></h2>
+		    </td>
+		    <td class="td_letter2" id="Convert_txt_td2" align="right" width="110px">
+			    <span id="Convert_txt"><script>$( "#Convert_txt" ).html(words[1]+words[3]);</script></span>
+		    </td>
+	    </tr>
+    </table>
+        <!--===============  Alphabet -->
+    <div class="classobram">
+        <table id="main_tab" width=100%>
+            <tr>
+                <td class="td_letter" id="1">A</td>
+                <td class="td_letter" id="2">B</td>
+                <td class="td_letter" id="3">C</td>
+                <td class="td_letter" id="4">D</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="5">E</td>
+                <td class="td_letter" id="6">F</td>
+                <td class="td_letter" id="7">G</td>
+                <td class="td_letter" id="8">H</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="9">I</td>
+                <td class="td_letter" id="10">J</td>
+                <td class="td_letter" id="11">K</td>
+                <td class="td_letter" id="12">L</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="13">M</td>
+                <td class="td_letter" id="14">N</td>
+                <td class="td_letter" id="15">O</td>
+                <td class="td_letter" id="16">P</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="17">Q</td>
+                <td class="td_letter" id="18">R</td>
+                <td class="td_letter" id="19">D</td>
+                <td class="td_letter" id="20">T</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="21">U</td>
+                <td class="td_letter" id="22">V</td>
+                <td class="td_letter" id="23">W</td>
+                <td class="td_letter" id="24">X</td>
+            </tr>
+                <tr>
+                <td class="td_letter" id="25">Y</td>
+                <td class="td_letter" id="26">Z</td>
+                <td colspan="2" class="td_letter" id="123">123</td>
+            </tr>
+        </table>
+
+        <table style="display:none" id="num_tab" width=100%>
+            <tr>
+                <td class="td_letter" id="01">1</td>
+                <td class="td_letter" id="02">2</td>
+                <td class="td_letter" id="03">3</td>
+                <td class="td_letter" id="04">4</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="05">5</td>
+                <td class="td_letter" id="06">6</td>
+                <td class="td_letter" id="07">7</td>
+                <td class="td_letter" id="08">8</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="09">9</td>
+                <td class="td_letter" id="00">0</td>
+                <td colspan="2" class="td_letter" id="abc">abc</td>
+            </tr>
+        </table>
+        <!--===============  Convert -->
+        <table style="display:none" id="convert_tab" width=100%>
+            <tr>
+                <td>
+			        <span id="code_hint">
+                        <script>$( "#code_hint" ).html(words[10]);</script>
+                    </span>
+
+			        <form name="frm">
+		                <textarea class="input_text" type="text" name="input">Hello</textarea>
+			            <p align="center">
+			            <input type="button" id="tocod"/>
+			            <input type="button" id="toen"/>
+			            <p align="center">
+			            <input type="button" class="litlbtn" id="clearid" />
+			            <input type="button" class="litlbtn" id="swapid"  />
+			            </p>
+			        </form>
+			        <span id="output_text"><script>$( "#output_text" ).html(words[8]);</script></span>
+			        <div id="output">||<div>
+                </td>
+            </tr>
+        </table>	 
+	</div>
+<!--===============-->
+</body>
+</html>

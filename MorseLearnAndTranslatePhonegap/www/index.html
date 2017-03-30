@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head>
+    <script src="scripts/jquery-3.2.0.min.js"></script>
+    <script src="scripts/words.js"></script>
+    <script src="scripts/abc.js"></script>
+    <script src="scripts/script.js"></script>
+    <link href="style/style.css" rel="Stylesheet" />
+</head>
+<body>
+    <!--  Header -->
+    <table  width="100%" align="center" valign="middle" class='upper_table' width="100%">
+	    <tr>
+		    <td>
+			    <h2 id="header_text"><script>$( "#header_text" ).html(words[0]);</script></h2>
+		    </td>
+		    <td class="change_mode_btn" id="Convert_txt_td2" align="right" width="110px">
+			    <span id="Convert_txt"><script>$( "#Convert_txt" ).html(words[1]+words[3]);</script></span>
+		    </td>
+	    </tr>
+    </table>
+    <div class="classobram">
+        <!--  Alphabet -->
+        <table id="main_tab" width=100%>
+            <tr>
+                <td class="td_letter" id="1">A</td>
+                <td class="td_letter" id="2">B</td>
+                <td class="td_letter" id="3">C</td>
+                <td class="td_letter" id="4">D</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="5">E</td>
+                <td class="td_letter" id="6">F</td>
+                <td class="td_letter" id="7">G</td>
+                <td class="td_letter" id="8">H</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="9">I</td>
+                <td class="td_letter" id="10">J</td>
+                <td class="td_letter" id="11">K</td>
+                <td class="td_letter" id="12">L</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="13">M</td>
+                <td class="td_letter" id="14">N</td>
+                <td class="td_letter" id="15">O</td>
+                <td class="td_letter" id="16">P</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="17">Q</td>
+                <td class="td_letter" id="18">R</td>
+                <td class="td_letter" id="19">D</td>
+                <td class="td_letter" id="20">T</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="21">U</td>
+                <td class="td_letter" id="22">V</td>
+                <td class="td_letter" id="23">W</td>
+                <td class="td_letter" id="24">X</td>
+            </tr>
+                <tr>
+                <td class="td_letter" id="25">Y</td>
+                <td class="td_letter" id="26">Z</td>
+                <td colspan="2" class="td_letter" id="123">123</td>
+            </tr>
+        </table>
+        <!--  Numbers -->
+        <table style="display:none" id="num_tab" width=100%>
+            <tr>
+                <td class="td_letter" id="01">1</td>
+                <td class="td_letter" id="02">2</td>
+                <td class="td_letter" id="03">3</td>
+                <td class="td_letter" id="04">4</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="05">5</td>
+                <td class="td_letter" id="06">6</td>
+                <td class="td_letter" id="07">7</td>
+                <td class="td_letter" id="08">8</td>
+            </tr>
+            <tr>
+                <td class="td_letter" id="09">9</td>
+                <td class="td_letter" id="00">0</td>
+                <td colspan="2" class="td_letter" id="abc">abc</td>
+            </tr>
+        </table>
+        <!--===============  Convert -->
+        <table style="display:none" id="convert_tab" width=100%>
+            <tr>
+                <td>
+			        <span id="code_hint">
+                        <script>$( "#code_hint" ).html(words[10]);</script>
+                    </span>
+
+			        <form name="frm">
+		                <textarea class="input_text" type="text" name="input">Hello</textarea>
+			            <p align="center">
+			                <input type="button" id="tocod"/>
+			                <input type="button" id="toen"/>
+                        </p>
+			            <p align="center">
+			                <input type="button" class="litlbtn" id="clearid" />
+			                <input type="button" class="litlbtn" id="swapid"  />
+			            </p>
+			        </form>
+			        <span id="output_text"><script>$( "#output_text" ).html(words[8]);</script></span>
+			        <div id="output"></div>
+                </td>
+            </tr>
+        </table>	 
+	</div>
+<!--===============-->
+</body>
+</html>
